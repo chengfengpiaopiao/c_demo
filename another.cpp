@@ -4,6 +4,7 @@
 #include <string>
 using namespace std;
 using std::string;
+#include <iomanip> //精确度
 
 void doNotion() {
 	string anotherStr = "hello i am from Another";
@@ -26,9 +27,15 @@ void testVariable() {
 	float quality = 0.0000000001;
 	cout << "小数测试float = " << quality << endl;
 
+	cout << fixed;
 	double qualityDouble = 0.0000001;
 	cout << "小数测试double = " << qualityDouble << endl;
 
 	wchar_t wChar[] = L"宽字符";
 	cout << wChar << endl;
+
+	
+	cout << setprecision(7);
+	double DoubleNum = 100.0 / 3.0;
+	cout << DoubleNum * 10000 << endl;
 }
