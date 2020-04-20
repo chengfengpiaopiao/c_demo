@@ -4,8 +4,12 @@
 #include "pch.h"
 #include <iostream>
 #include <string>
+//引入其他c++文件
+#include "another.h"
 using namespace std;
 using std::string;
+
+
 
 void doAnything() {
 	cout << "hello c++";
@@ -14,6 +18,7 @@ void doAnything() {
 void doubleValue(int *val)
 {
 	*val *= 2;
+	
 }
 
 std::string iso_8859_1_to_utf8(std::string &str)
@@ -45,6 +50,9 @@ int main()
 	string dest = iso_8859_1_to_utf8(src);
 
 	std::cout << dest << endl;
+
+	doNotion();
+
 }
 
 
