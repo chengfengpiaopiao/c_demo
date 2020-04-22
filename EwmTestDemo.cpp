@@ -9,6 +9,7 @@
 using namespace std;
 using std::string;
 
+#include "student.h"
 
 
 void doAnything() {
@@ -39,7 +40,7 @@ std::string iso_8859_1_to_utf8(std::string &str)
 }
 
 
-
+student stud;
 
 int main()
 {
@@ -58,7 +59,7 @@ int main()
 	cout << "-------------------------" << endl;
 
 	testVariable();
-
+	stud.say();
 }
 
 
