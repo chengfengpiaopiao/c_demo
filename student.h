@@ -1,5 +1,6 @@
 #pragma once
-class student
+#include "Personal.h"
+class student : public Personal
 {
 public:
 	student();
